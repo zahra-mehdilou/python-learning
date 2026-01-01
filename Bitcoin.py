@@ -7,10 +7,10 @@ while True:
     data = response.json()
     price = float(data["bitcoin"]["usd"])
     print("current price is:", price)
-    if price<800000:
+    if price<=80000:
         print("Time to buy")
-    elif price>90000:
+    elif 80000<price<90000:
         print("Wait!")
-    elif price>100000:
+    elif price>=90000:
         break
     time.sleep(600)
